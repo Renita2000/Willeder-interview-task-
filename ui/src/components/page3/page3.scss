@@ -1,39 +1,88 @@
-.animaitonDiv{
-    width: 1920px;
-    height: 550px;
-    background: #FFF;
+.animaitonDiv {
+  width: 1920px;
+  height: 550px;
+  background: #fff;
+
+  .mainFooter {
+    height: 392px;
+    background: rgb(93, 98, 115);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .footerPage {
+      display: flex;
+      flex-direction: row;
+      padding: 80px 200px 56px;
+      justify-content: center;
+      gap: 56px;
+      .footerHome {
+        font-family: Noto Sans;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: 0.3em;
+        text-align: left;
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+    .footerBar {
+      width: 1280px;
+      height: 4px;
+      background-color: rgba(255, 255, 255, 1);
+    }
+    .footerIcons {
+      display: flex;
+      flex-direction: row;
+      align-content: space-evenly;
+      gap: 40px;
+      padding: 24px;
+    }
+    .copyright {
+      color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      font-family: Noto Sans;
+      font-size: 12px;  
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0.6px;
+      padding: 40px;
+    }
+  }
 }
 
 @keyframes rotateAndScale {
-    0% {
-      transform: rotate(0deg) scale(1);
-    }
-    30% {
-      transform: rotate(360deg);
-    }
-   50% {
-      transform: scale(1.5);
-    }
-    80% {
-      transform: scale(1);
-    }
+  0% {
+    transform: rotate(0deg) scale(1);
   }
-  .square {
-    width: 200px;
-    height: 200px;
-    margin: 200px 865px;
-    background: 
-      linear-gradient(225deg, transparent 50%, blue 0) top left,
-        linear-gradient(45deg, transparent 50%, green 0) top left,
-      linear-gradient(315deg, transparent 50%, green 0) top right,
-      linear-gradient(135deg, transparent 50%, yellow 0) top right,
-      linear-gradient(45deg, transparent 50%, yellow 0) bottom right,
-      linear-gradient(225deg, transparent 50%, red 0) bottom right,
-      linear-gradient(315deg, transparent 50%, blue 0) bottom left,
-      linear-gradient(135deg, transparent 50%, red 0) bottom left;
-    background-size: 50% 50%;
-    background-repeat: no-repeat;
-      background-color: transparent;
-   animation: rotateAndScale 5s ease-in-out forwards infinite;
-
+  30% {
+    transform: rotate(360deg);
   }
+  50% {
+    transform: scale(1.5);
+  }
+  80% {
+    transform: scale(1);
+  }
+}
+.square {
+  width: 200px;
+  height: 200px;
+  margin: 200px 865px;
+  background: linear-gradient(225deg, transparent 50%, rgba(101, 135, 255, 1) 0)
+      top left,
+    linear-gradient(45deg, transparent 50%, rgba(139, 255, 84, 1) 0) top left,
+    linear-gradient(315deg, transparent 50%, rgba(139, 255, 84, 1) 0) top right,
+    linear-gradient(135deg, transparent 50%, rgba(233, 255, 96, 1) 0) top right,
+    linear-gradient(45deg, transparent 50%, rgba(233, 255, 96, 1) 0) bottom
+      right,
+    linear-gradient(225deg, transparent 50%, rgba(255, 82, 82, 1) 0) bottom
+      right,
+    linear-gradient(315deg, transparent 50%, rgba(101, 135, 255, 1) 0) bottom
+      left,
+    linear-gradient(135deg, transparent 50%, rgba(255, 82, 82, 1) 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 1);
+  animation: rotateAndScale 5s ease-in-out forwards infinite;
+}
