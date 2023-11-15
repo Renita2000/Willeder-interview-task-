@@ -14,9 +14,21 @@ function Page1() {
         <p className="subtitle">subtitle</p>
       </div>
       <div className="carousal">
-        <img src={carousal2} />
-        <img src={carousal2} />
-        <img src={carousal3} />
+        <div className="firstImg">
+          <p className="serialNo">01</p>
+          <p className="heading">Lorem ipsum dolor sit</p>
+          <p className="discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+        <div className="firstImg">
+          <p className="serialNo">02</p>
+          <p className="heading">Lorem ipsum dolor sit</p>
+          <p className="discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+        <div className="thirdImg">
+          <p className="serialNo">03</p>
+          <p className="heading">Lorem ipsum dolor sit</p>
+          <p className="discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
       </div>
     </div>
   );
