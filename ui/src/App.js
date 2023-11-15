@@ -2,6 +2,7 @@ import React from "react";
 import Home from "./components/home/home";
 import Page1 from "./components/page1/page1";
 import Page2 from "./components/page2/page2";
+import Page3 from "./components/page3/page3"
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Home />
       <Page1 />
       <Page2 />
+      <Page3 />
     </>
   );
 }
