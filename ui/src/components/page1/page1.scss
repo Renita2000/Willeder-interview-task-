@@ -1,0 +1,44 @@
+.sceondPage {
+  width: 1920px;
+  height: 1174px;
+  margin-top: 11px;
+
+  .blueBar {
+    width: 280px;
+    height: 1174px;
+    position: absolute;
+    left: 820px;
+    background: #6a45ff;
+  }
+  .title {
+    width: 174px;
+    height: 64px;
+    font-family: "Noto Sans";
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 64px;
+    letter-spacing: 0.3em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    margin-left: 53px;
+    margin-top: 200px;
+    margin-bottom: 8px;
+  }
+  .subtitle {
+    width: 140px;
+    height: 38px;
+    font-family: Noto Sans;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0.3em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    margin-left: 70px;
+    margin-top: 8px;
+  }
+  .carousal {
+    display: flex;
+    flex-direction: row;
+  }
+}
