@@ -8,7 +8,7 @@ function Page2() {
     <div className="thirdPage">
       <div className="blueBar"></div>
       <div className="computerImg">
-        <img src={computerImage} style={{ width: "750px", height: "440px" }} />
+        <img src={computerImage}  alt=""/>
 
         <div className="mainWrapper">
           <div className="mainHeading">
@@ -25,11 +25,7 @@ function Page2() {
             <p className="arrowHeading">Lorem ipsum</p>
             <img
               src={arrowIcon}
-              style={{
-                width: "52px",
-                height: "52px",
-                marginLeft: "16px",
-              }}
+              alt=""
             />
           </div>
         </div>

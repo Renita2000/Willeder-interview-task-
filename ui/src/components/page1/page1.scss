@@ -1,6 +1,13 @@
+@import "../../App.scss";
+
 .sceondPage {
   width: 1920px;
   height: 1174px;
+  @media screen and (max-width: $mobile-breakpoint) {
+    width: 100%;
+    height: 1118px;
+    position: relative;
+  }
 
   .blueBar {
     width: 280px;
@@ -8,6 +15,11 @@
     position: absolute;
     left: 820px;
     background: #6a45ff;
+    @media screen and (max-width: $mobile-breakpoint) {
+      width: 40px;
+      background: rgba(106, 69, 255, 0.24);
+      left: 158.5px;
+    }
   }
   .title {
     width: 174px;
@@ -22,6 +34,19 @@
     margin-left: 53px;
     margin-top: 200px;
     margin-bottom: 8px;
+    @media screen and (max-width: $mobile-breakpoint) {
+      width: 104px;
+      height: 38px;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 38.4px;
+      letter-spacing: 7.2px;
+      text-align: center;
+      color: rgba(106, 69, 255, 1);
+      margin-left: -33.5px;
+      margin-top: 80px;
+      margin-bottom: 8px;
+    }
   }
   .subtitle {
     width: 140px;
@@ -32,15 +57,40 @@
     line-height: 38px;
     letter-spacing: 0.3em;
     text-align: center;
+    font-style: normal;
     color: rgba(255, 255, 255, 1);
     margin-left: 70px;
     margin-top: 8px;
+    @media screen and (max-width: $mobile-breakpoint) {
+      width: 140px;
+      height: 38px;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 32px;
+      letter-spacing: 6px;
+      text-align: center;
+      color: rgba(0, 0, 0, 1);
+      margin-left: -47px;
+      margin-top: 8px;
+    }
   }
   .carousal {
     display: flex;
     flex-direction: row;
     position: absolute;
     top: 1450px;
+    @media screen and (max-width: $mobile-breakpoint) {
+      flex-direction: column;
+      top: 222px;
+      gap: 24px;
+      padding: 0px 16px 0px 16px;
+      align-items: flex-start;
+      align-self: stretch;
+      width: 311px;
+      height: 816px;
+      margin-left: 9px;
+    }
 
     .firstImg {
       width: 640px;
@@ -62,6 +112,12 @@
       background-position: 60% 100%;
       background-size: cover;
       background-repeat: no-repeat;
+      @media screen and (max-width: $mobile-breakpoint) {
+        width: inherit;
+        height: 256px;
+        // padding: 40px 0px;
+        gap: 24px;
+      }
       .serialNo {
         color: #fff;
         text-align: center;
@@ -74,6 +130,9 @@
         // position: absolute;
         margin-top: 148px;
         width: 449.044px;
+        @media screen and (max-width: $mobile-breakpoint) {
+          display: none;
+        }
       }
       .heading {
         width: 419.044px;
@@ -86,6 +145,20 @@
         font-weight: 600;
         line-height: 52px;
         letter-spacing: 9.6px;
+        @media screen and (max-width: $mobile-breakpoint) {
+          width: 247px;
+          height: 64px;
+          margin-top: 9px;
+          color: #fff;
+          text-align: center;
+          font-family: Noto Sans;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 32px;
+          letter-spacing: 6px;
+          margin-top: 40px;
+        }
       }
       .discription {
         width: 434px;
@@ -98,6 +171,19 @@
         font-weight: 400;
         line-height: 150%;
         letter-spacing: 1px;
+        @media screen and (max-width: $mobile-breakpoint) {
+          width: 247px;
+          height: 42px;
+          color: #fff;
+          margin-bottom: 147px;
+          text-align: center;
+          font-family: 'Noto Sans';
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 21px;
+          letter-spacing: 0.7px;
+        }
       }
     }
 
@@ -121,6 +207,13 @@
       background-position: 60% 100%;
       background-size: cover;
       background-repeat: no-repeat;
+
+      @media screen and (max-width: $mobile-breakpoint) {
+        width: inherit;
+        height: 256px;
+        // padding: 40px 0px;
+        gap: 24px;
+      }
       .serialNo {
         color: #fff;
         text-align: center;
@@ -133,6 +226,9 @@
         // position: absolute;
         margin-top: 148px;
         width: 449.044px;
+        @media screen and (max-width: $mobile-breakpoint) {
+          display: none;
+        }
       }
       .heading {
         width: 419.044px;
@@ -145,6 +241,20 @@
         font-weight: 600;
         line-height: 52px;
         letter-spacing: 9.6px;
+        @media screen and (max-width: $mobile-breakpoint) {
+          width: 247px;
+          height: 64px;
+          margin-top: 9px;
+          color: #fff;
+          text-align: center;
+          font-family: Noto Sans;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 32px;
+          letter-spacing: 6px;
+          margin-top: 40px;
+        }
       }
       .discription {
         width: 434px;
@@ -157,7 +267,23 @@
         font-weight: 400;
         line-height: 150%;
         letter-spacing: 1px;
+        @media screen and (max-width: $mobile-breakpoint) {
+          width: 247px;
+          height: 42px;
+          color: #fff;
+          margin-bottom: 147px;
+          text-align: center;
+          font-family: 'Noto Sans';
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 21px;
+          letter-spacing: 0.7px;
+        }
       }
     }
   }
+}
+
+@media screen and (max-width: $mobile-breakpoint) {
 }

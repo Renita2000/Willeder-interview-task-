@@ -1,7 +1,14 @@
+@import "../../App.scss";
+
 .animaitonDiv {
   width: 1920px;
   height: 550px;
   background: #fff;
+  @media screen and (max-width: $mobile-breakpoint) {
+    width: inherit;
+    height: 590px;
+    // padding-top: 80px;
+  }
 
   .mainFooter {
     height: 392px;
@@ -9,12 +16,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (max-width: $mobile-breakpoint) {
+      // margin-top: 64px;
+      height: 465px;;
+    }
     .footerPage {
       display: flex;
       flex-direction: row;
       padding: 80px 200px 56px;
       justify-content: center;
       gap: 56px;
+      @media screen and (max-width: $mobile-breakpoint) {
+        padding: 24px;
+        flex-direction: column;
+        gap: 24px;
+      }
       .footerHome {
         font-family: Noto Sans;
         font-size: 16px;
@@ -23,12 +39,22 @@
         letter-spacing: 0.3em;
         text-align: left;
         color: rgba(255, 255, 255, 1);
+        @media screen and (max-width: $mobile-breakpoint) {
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 25.6px;
+          letter-spacing: 4.8px;
+        }
       }
     }
     .footerBar {
       width: 1280px;
       height: 4px;
       background-color: rgba(255, 255, 255, 1);
+      @media screen and (max-width: $mobile-breakpoint) {
+        width: 300px;
+        height: 2px;
+      }
     }
     .footerIcons {
       display: flex;
@@ -36,17 +62,27 @@
       align-content: space-evenly;
       gap: 40px;
       padding: 24px;
+      @media screen and (max-width: $mobile-breakpoint) {
+        gap: 24px;
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
     }
     .copyright {
       color: rgba(255, 255, 255, 0.8);
       text-align: center;
       font-family: Noto Sans;
-      font-size: 12px;  
+      font-size: 12px;
       font-style: normal;
       font-weight: 400;
       line-height: 18px;
       letter-spacing: 0.6px;
       padding: 40px;
+      @media screen and (max-width: $mobile-breakpoint) {
+        padding: 16px 40px 64px 40px;
+      }
     }
   }
 }
@@ -85,4 +121,13 @@
   background-repeat: no-repeat;
   background-color: rgba(255, 255, 255, 1);
   animation: rotateAndScale 5s ease-in-out forwards infinite;
+  @media screen and (max-width: $mobile-breakpoint) {
+    width: 100px;
+    height: 100px;
+    // margin: 80px 80px;
+    margin: 0;
+    margin-left: 125px;
+    margin-bottom: 64px;
+    margin-top: 80px;
+  }
 }

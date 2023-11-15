@@ -1,3 +1,4 @@
+import React from "react";
 import Union from "../../assets/Union.png";
 import Union_large from "../../assets/Union_large.png";
 import Hamburger from "../../assets/hamburgerIcon.png";
@@ -14,12 +15,6 @@ function Home() {
             src={Union}
             className="Union"
             alt=""
-            style={{
-              Width: "44.05px",
-              Height: "44px",
-              marginLeft: "80px",
-              flexShrink: "0",
-            }}
           />
           <div className="logo">LOGO</div>
         </div>
@@ -47,10 +42,6 @@ function Home() {
         <img
           src={Union_large}
           alt=""
-          style={{
-            width: "145.55px",
-            height: "145.4px",
-          }}
         />
         <p className="enlargedLogo">LOGO</p>
       </div>

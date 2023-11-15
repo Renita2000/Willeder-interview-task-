@@ -19,10 +19,10 @@ function Page3() {
         </div>
         <div className="footerBar"></div>
         <div className="footerIcons">
-            <img src={facebook}/>
-            <img src={twitter}/>
-            <img src={instagram}/>
-            <img src={tiktok}/>
+            <img src={facebook} alt=""/>
+            <img src={twitter} alt=""/>
+            <img src={instagram} alt=""/>
+            <img src={tiktok} alt=""/>
         </div>
         <div className="copyright">© Logo, Inc.</div>
     </div>
