@@ -24,7 +24,7 @@
   .title {
     width: 174px;
     height: 64px;
-     @include font1;
+    @include font1;
     font-size: 40px;
     font-weight: 600;
     line-height: 64px;
@@ -51,7 +51,7 @@
   .subtitle {
     width: 140px;
     height: 38px;
-     @include font1;
+    @include font1;
     font-size: 24px;
     font-weight: 600;
     line-height: 38px;
@@ -120,7 +120,7 @@
       .serialNo {
         color: #fff;
         text-align: center;
-         @include font1;
+        @include font1;
         font-size: 24px;
         font-style: normal;
         font-weight: 600;
@@ -137,7 +137,7 @@
         margin-top: 9px;
         color: #fff;
         text-align: center;
-         @include font1;
+        @include font1;
         font-size: 32px;
         font-style: normal;
         font-weight: 600;
@@ -149,7 +149,7 @@
           margin-top: 9px;
           color: #fff;
           text-align: center;
-           @include font1;
+          @include font1;
           font-size: 20px;
           font-style: normal;
           font-weight: 600;
@@ -163,7 +163,7 @@
         color: #fff;
         margin-bottom: 147px;
         text-align: center;
-         @include font1;
+        @include font1;
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
@@ -175,7 +175,7 @@
           color: #fff;
           margin-bottom: 147px;
           text-align: center;
-           @include font1;
+          @include font1;
           font-size: 14px;
           font-style: normal;
           font-weight: 400;
@@ -213,7 +213,7 @@
       .serialNo {
         color: #fff;
         text-align: center;
-         @include font1;
+        @include font1;
         font-size: 24px;
         font-style: normal;
         font-weight: 600;
@@ -230,7 +230,7 @@
         margin-top: 9px;
         color: #fff;
         text-align: center;
-         @include font1;
+        @include font1;
         font-size: 32px;
         font-style: normal;
         font-weight: 600;
@@ -242,7 +242,7 @@
           margin-top: 9px;
           color: #fff;
           text-align: center;
-           @include font1;
+          @include font1;
           font-size: 20px;
           font-style: normal;
           font-weight: 600;
@@ -256,7 +256,7 @@
         color: #fff;
         margin-bottom: 147px;
         text-align: center;
-         @include font1;
+        @include font1;
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
@@ -268,7 +268,7 @@
           color: #fff;
           margin-bottom: 147px;
           text-align: center;
-           @include font1;
+          @include font1;
           font-size: 14px;
           font-style: normal;
           font-weight: 400;
@@ -302,19 +302,17 @@
       @media screen and (max-width: $mobile-breakpoint) {
         width: inherit;
         height: 256px;
-        // padding: 40px 0px;
         gap: 24px;
       }
       .serialNo {
         color: #fff;
         text-align: center;
-         @include font1;
+        @include font1;
         font-size: 24px;
         font-style: normal;
         font-weight: 600;
         line-height: 8.4px;
         letter-spacing: 7.2px;
-        // position: absolute;
         margin-top: 148px;
         width: 449.044px;
         @media screen and (max-width: $mobile-breakpoint) {
@@ -326,7 +324,7 @@
         margin-top: 9px;
         color: #fff;
         text-align: center;
-         @include font1;
+        @include font1;
         font-size: 32px;
         font-style: normal;
         font-weight: 600;
@@ -338,7 +336,7 @@
           margin-top: 9px;
           color: #fff;
           text-align: center;
-           @include font1;
+          @include font1;
           font-size: 20px;
           font-style: normal;
           font-weight: 600;
@@ -352,7 +350,7 @@
         color: #fff;
         margin-bottom: 147px;
         text-align: center;
-         @include font1;
+        @include font1;
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
@@ -364,7 +362,7 @@
           color: #fff;
           margin-bottom: 147px;
           text-align: center;
-           @include font1;
+          @include font1;
           font-size: 14px;
           font-style: normal;
           font-weight: 400;

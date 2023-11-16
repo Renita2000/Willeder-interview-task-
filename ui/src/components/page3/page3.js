@@ -1,5 +1,3 @@
-
-
 import "./page3.scss";
 import facebook from "../../assets/facebook.png";
 import twitter from "../../assets/twitter.png";
