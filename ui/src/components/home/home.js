@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Union from "../../assets/Union.png";
 import Union_large from "../../assets/Union_large.png";
 import Hamburger from "../../assets/hamburgerIcon.png";
@@ -6,9 +6,21 @@ import Hamburger from "../../assets/hamburgerIcon.png";
 import "./home.scss";
 
 function Home() {
+  // useEffect(()=>{
+  //   function changeBackgroundImage() {
+  //     const element = document.getElementById('background-element');
+  //     // element.style.animationPlayState = 'paused'; // Pause the animation
+  //     // setTimeout(() => {
+  //     //     element.style.animationPlayState = 'running'; // Resume the animation
+  //     // }, 3000); // Pause for 3 seconds
+  // }
+  
+  // setInterval(changeBackgroundImage, 3000); // Call the function every 6 seconds (twice the animation duration)
+
+  // },[])
   return (
     <div className="app">
-      <div className="heroImg"></div>
+      <div className="heroImg" id="background-element"></div>
       <div className="topBar">
         <div className="fullLogo">
           <img

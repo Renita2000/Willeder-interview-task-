@@ -5,4 +5,8 @@ $indigo-blue: rgba(106, 69, 255, 1);
   font-family: Noto Sans;
 }
 
+@mixin font2 {
+  font-family: Revalia;
+}
+
 $mobile-breakpoint: 375px;

@@ -9,7 +9,7 @@
         rgba(0, 0, 0, 0) 26.56%,
         rgba(0, 0, 0, 0.75) 71.35%
       ),
-      url("../../assets/image1.png"), lightgray 50% / cover no-repeat;
+      url("../../assets/carousel1.png"), lightgray 50% / cover no-repeat;
     display: flex;
     height: 1080px;
     padding: 0px 160px;
@@ -19,6 +19,33 @@
     gap: 64px;
     flex-shrink: 0;
     align-self: stretch;
+    animation: changeBackground 9s infinite;
+  }
+  @keyframes changeBackground {
+    0% {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 26.56%,
+          rgba(0, 0, 0, 0.75) 71.35%
+        ),
+        url("../../assets/carousel1.png"), lightgray 50% / cover no-repeat;
+    }
+    25% {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 26.56%,
+          rgba(0, 0, 0, 0.75) 71.35%
+        ),
+        url("../../assets/carousel2.png"), lightgray 50% / cover no-repeat;
+    }
+    75% {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 26.56%,
+          rgba(0, 0, 0, 0.75) 71.35%
+        ),
+        url("../../assets/carousel3.png"), lightgray 50% / cover no-repeat;
+    }
   }
 
   // .hamburger {
@@ -45,7 +72,7 @@
     }
 
     .logo {
-      font-family: "Revalia";
+      @include font2;
       font-size: 32px;
       font-style: normal;
       font-weight: 400;
@@ -99,7 +126,7 @@
     }
 
     .enlargedLogo {
-      font-family: Revalia;
+      @include font2;
       color: rgba(255, 255, 255, 1);
       font-size: 78px;
       font-weight: 400;
@@ -182,11 +209,9 @@
           rgba(0, 0, 0, 0) 26.56%,
           rgba(0, 0, 0, 0.75) 71.35%
         ),
-        url("../../assets/image1.png"), lightgray 50% / cover no-repeat;
+        url("../../assets/carousel1.png"), lightgray 50% / cover no-repeat;
       display: flex;
       height: 554px;
-      // width: $mobile-breakpoint;
-      // padding: 0px 160px;
       flex-direction: column;
       justify-content: flex-end;
       align-items: center;
@@ -198,6 +223,45 @@
       background-clip: padding-box;
       background-size: cover;
       background-repeat: no-repeat;
+      animation: changeBackground 9s infinite;
+    }
+    @keyframes changeBackground {
+      0% {
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0) 26.56%,
+            rgba(0, 0, 0, 0.75) 71.35%
+          ),
+          url("../../assets/carousel1.png"), lightgray 50% / cover no-repeat;
+        background-position: center;
+        background-clip: padding-box;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      25% {
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0) 26.56%,
+            rgba(0, 0, 0, 0.75) 71.35%
+          ),
+          url("../../assets/carousel2.png"), lightgray 50% / cover no-repeat;
+        background-position: center;
+        background-clip: padding-box;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      75% {
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0) 26.56%,
+            rgba(0, 0, 0, 0.75) 71.35%
+          ),
+          url("../../assets/carousel3.png"), lightgray 50% / cover no-repeat;
+        background-position: center;
+        background-clip: padding-box;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
     }
 
     .topBar {
@@ -209,12 +273,11 @@
       display: flex;
       flex-direction: row;
       align-content: space-evenly;
-      // align-content: center;
       justify-content: space-between;
       flex-wrap: wrap;
 
       .logo {
-        font-family: "Revalia";
+        @include font2;
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
@@ -236,28 +299,6 @@
       .topNavList {
         display: none;
       }
-      // .hamburger {
-      //   // right: 16px;
-      //   // left: calc(100% - 16px);
-      //   position: relative;
-      //   display: flex;
-      //   flex-direction: row;
-      //   align-items: center;
-      //   // top: 10px;
-      //   // float: right;
-      //   // right: 10px;
-      //   img {
-
-      //     width: 100%;
-      //     height: 100%;
-      //     // float: right;
-
-      //     // left: 160px;
-      //     // align-self: flex-end;
-
-      //     // max-width: 100%;
-      //   }
-      // }
       .hamburgericon {
         display: flex;
         margin-right: 16px;
@@ -266,11 +307,8 @@
     }
 
     .centerUnion {
-      // display: none;
       position: absolute;
       top: 0;
-      // width: 100%;
-      // width: $mobile-breakpoint;
       margin-top: 179.25px;
       margin-left: 55.66px;
       display: flex;
@@ -282,10 +320,8 @@
       }
 
       .enlargedLogo {
-        // display: none;
-        font-family: Revalia;
+        @include font2;
         color: rgba(255, 255, 255, 1);
-        // color: red;
         font-size: 36px;
         font-weight: 400;
         line-height: 61.56px;
@@ -293,26 +329,23 @@
         letter-spacing: 17.28px;
         text-align: center;
         width: 177.49px;
-        height: 63.80px;
+        height: 63.8px;
         margin-top: 0px;
         margin-left: 16.32px;
       }
     }
 
     .colouredTextDiv {
-      // display: none;
-       width: inherit;
+      width: inherit;
       height: 64px;
       background-color: transparent;
       position: absolute;
       bottom: 256px;
 
       .highlightedText {
-        // display: none;
         width: 315px;
         height: 64px;
         color: #fff;
-        // color: red;
         text-align: center;
         @include font1;
         font-size: 20px;
@@ -320,13 +353,12 @@
         font-weight: 600;
         line-height: 32px;
         letter-spacing: 6px;
-        margin-top:38.5px;
+        margin-top: 38.5px;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
         margin-left: 25px;
       }
 
       .highlightedText2 {
-        // display: none;
         width: 298px;
         height: 63px;
         color: #fff;
@@ -340,7 +372,6 @@
         margin-left: 38.5px;
       }
       .scrollBox {
-        // display: none;
         width: inherit;
         display: flex;
         align-items: center;

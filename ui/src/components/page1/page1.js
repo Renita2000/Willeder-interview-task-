@@ -13,7 +13,7 @@ function Page1() {
           <p className="heading">Lorem ipsum dolor sit</p>
           <p className="discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
         </div>
-        <div className="firstImg">
+        <div className="sceondImg">
           <p className="serialNo">02</p>
           <p className="heading">Lorem ipsum dolor sit</p>
           <p className="discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>

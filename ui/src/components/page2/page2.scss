@@ -58,7 +58,7 @@
         }
         .loremTitle {
           color: #000;
-          font-family: Noto Sans;
+          @include font1;
           font-size: 32px;
           font-style: normal;
           font-weight: 600;
@@ -67,7 +67,7 @@
           height: 8px;
           @media screen and (max-width: $mobile-breakpoint) {
             color: #000;
-            font-family: Noto Sans;
+            @include font1;
             font-size: 20px;
             font-style: normal;
             font-weight: 600;
@@ -91,7 +91,7 @@
       }
       .loremDiscription {
         color: rgba(0, 0, 0, 0.8);
-        font-family: Noto Sans;
+        @include font1;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -101,7 +101,7 @@
         @media screen and (max-width: $mobile-breakpoint) {
           margin-top: 284px;
           color: rgba(0, 0, 0, 0.8);
-          font-family: Noto Sans;
+          @include font1;
           font-size: 14px;
           font-style: normal;
           font-weight: 400;
@@ -133,7 +133,7 @@
         .arrowHeading {
           color: #000;
           text-align: center;
-          font-family: Noto Sans;
+          @include font1;
           font-size: 16px;
           font-style: normal;
           font-weight: 600;
