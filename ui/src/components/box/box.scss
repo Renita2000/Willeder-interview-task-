@@ -1,0 +1,11 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+  margin: 5px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
